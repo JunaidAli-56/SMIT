@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Assignment 10</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-bg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://saylani-welfare-uk.netlify.app/saylani-logo.png" alt="" width="150" height="auto">
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="container-fluid py-3 ">
+        <h3 class="text-center">Chapter # 21-25|Strings And its Methods</h3>
+      <hr>
+      </div>
+      <div class="conatiner px-4">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6 text-center">
+                <h4>Input</h4>
+                <div class="card card1 card-glass p-3">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="inputText" placeholder="Type your texr here" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-primary" type="button" id="button-addon2" onclick="clearInput()">Clear</button>
+                      </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 text-center">
+                <h4>Original String</h4>
+                <div class="card card2 py-3 card-glass" id="originalText">
+                    
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 text-center mt-4">
+                <h4>Button</h4>
+                <div class="card3 py-4 card-glass">
+                    <button type="button" class="btn btn-warning" onclick="round()">Round A Number</button>
+                    <button type="button" class="btn btn-warning" onclick="ceil()">Ceil A Number</button>
+                    <button type="button" class="btn btn-warning" onclick="floor()">Floor A Number</button>
+                    <button type="button" class="btn btn-warning"  onclick="randomNumber()">Generate A Number</button>
+                    <button type="button" class="btn btn-warning" onclick="dice()">Throw A Dice</button>
+                    <button type="button" class="btn btn-warning" onclick="randomString()">Generate Password</button>
+                    <button type="button" class="btn btn-warning" onclick="convertingString()">Converting Strings</button>
+                    <button type="button" class="btn btn-warning" onclick="controlingLength()">Controling Length</button>
+                    <button type="button" class="btn btn-warning" onclick="calculateGST()">Calculate GST</button>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 text-center mt-4">
+                <h4>Output</h4>
+                <div class="card card4 card-glass" id="output" >
+                    
+                </div>
+                <button type="button" class="btn btn-primary  buttton my-3" onclick="clearOutput()">Clear Output</button>
+            </div>
+        </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

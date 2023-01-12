@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#home {
+    height: 55px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    text-decoration: none;
+    position: fixed;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.368);
+    letter-spacing: 5px;
+    z-index: 100000;
+}
+#home ul {
+    display: flex;
+    justify-content: end;
+}
+
+#home ul li {
+    list-style: none;
+}
+#home ul li a {
+    text-decoration: none;
+    /* padding-right: 20px; */
+    margin-right: 20px;
+    padding-right: 30px;
+    height: 70px;
+}
+#home a{
+    letter-spacing: 5px;
+    text-decoration: none;
+    color: black;
+    padding-left: 40px;
+    font-size: 19px;
+}
+#home ul li a:hover{
+    background-color: #CCCCCC;
+}
+/* main image style */
+#main1 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+img {
+    height: 100vh;
+}
+.img{
+    position: relative;
+}
+.img .mainText{
+    position: absolute;
+    top: 50% ; 
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 35px;
+}
+.img .mainText b{
+    padding: 10px 20px 10px 20px;
+    background-color: rgba(0, 0, 0, 0.749);
+}
+.img img {
+    height: 600px;
+    width: 1263px;
+}
+.img div{
+    position: absolute;
+     
+}
+/* project styling */
+.projects {
+    width: 100%;
+    height: 100vh;
+    margin-top: 50px;
+}
+.projects h2 {
+    font-size: 25px;
+    margin: 0px 0px 20px 20px;
+}
+.projects .project {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px 0px;
+    justify-content: space-evenly;
+}
+.projects .project .image {
+    width: 290px;
+    height: 200px;
+    margin: 0px 2px 15px 5px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.418);
+}
+.projects .project .image img {
+    width: 100%;
+    height: 100%;
+}
+.projects .project .image div {
+    position: relative;
+}
+.projects .project .image div span {
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 3px;
+    background-color: black;
+    top: 0;
+    padding: 5px 8px;
+    position: absolute;
+}
+/* about style */
+.about {
+    height: 740px;
+    width: 100%;
+}
+.about h2,hr {
+    margin: 10px 22px 0px 22px;
+}
+#para{
+    margin: 5px 22px 20px 22px;
+    font-size:20px;
+}
+.cards {
+    height: 490Px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.cards div {
+    width: 290px;
+    height: 488px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.301);
+}
+.cards div div {
+    width: 290px;
+    height: 210px;
+}
+.cards div div img {
+    height: 100%;
+    width: 100%;
+    filter: grayscale(80%);
+}
+.cards h1,h4,p {
+    padding-top: 3px;
+}
+.cards h4{
+    color: #666666b0;
+}
+.cards p {
+    margin-bottom: 15px;
+}
+.cards button {
+    margin-top: 0px;
+}
+.btn {
+    margin-top: 10px;
+    width: 100%;
+    height: 43px;
+    background-color: whitesmoke;
+    border: none;
+    font-size: 20px;
+}
+.btn:hover{
+    background-color: #CCCCCC;
+}
+/* contact style */
+.contact {
+    height: 1290px;
+    width: 100%;
+}
+.contact h1 {
+    margin: 20px 22px 0px 22px;
+}
+#para1 {
+    margin: 20px 22px 0px 22px;
+    padding-bottom: 5px;
+    font-size: 19px;
+}
+.form {
+    height: 320px;
+    width: 100%;
+}
+.form input {
+    display: flex;
+    flex-direction: column;
+    height: 45px;
+    width: 95%;
+    margin: 15px 20px 0px 20px;
+    font-size: 16px;
+    padding: 5px;
+}
+.form button {
+    height: 40px;
+    width: 160px;
+    margin: 25px 0px 0px 20px;
+    color: #FFFFFF;
+    background-color: black;
+    font-size: 16px;
+}
+.form button:hover {
+    border: none;
+    color: black;
+    background-color: #CCCCCC;
+}
+.img2 {
+    height: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.img2 img {
+    height: 100%;
+    width: 97%;
+}
+/* footer style */
+footer {
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 24px 0px;
+    font-size: 20px;
+}
+footer a {
+    color: white;
+}

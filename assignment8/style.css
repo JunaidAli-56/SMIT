@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: #ffffff;
+}
+.container .col .card{
+    text-align: center;
+    
+}
+.card3{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+    border: 2px solid #FFC107;
+    border-radius: 6px;
+    padding: 40px 0px !important;
+}
+.card3 button{
+    width: calc(40% - 10px);
+}
+.card4{
+    background-color: transparent;
+    color: #ffffff;
+    height: 90%;
+    border: 2px solid #FFC107;
+}

@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-color: black; */
+    background-image: url(assets/pexels-james-wheeler-1519088.jpg);
+    object-fit: cover;
+    color: #ffffff;
+}
+.nav-bg{
+    padding: 20px 0px;
+    background: rgba(255, 255, 255, 0.02) !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+.card-glass{
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);   
+}
+.container .col .card{
+    text-align: center;
+}
+#originalText{
+    font-size: 30px;
+    font-weight: 500;
+}
+.card1 input{
+    background: transparent !important;
+    color: #ffffff !important;
+    outline: 0 !important;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid #ffffff;
+}
+.card2{
+    background-color: transparent;
+    color:aliceblue;
+}
+.card3{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* border: 2px solid #FFC107; */
+    border-radius: 6px;
+    padding: 40px 0px !important;
+}
+.card3 button{
+    width: calc(40% - 10px);
+    background: transparent;
+    color: #ffffff;
+    font-weight: 500;
+}
+.card4{
+    background-color: transparent;
+    color: #ffffff;
+    height: 90%;
+    text-align: center;
+    padding-top: 30px ;
+    /* border: 2px solid #FFC107; */
+}

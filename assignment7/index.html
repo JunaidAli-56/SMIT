@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap Css -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body class=" d-flex flex-column min-vh-100 ">
+    <header>
+        <!-- Nav Start -->
+        <nav class="navbar navbar-expand-lg  bg-black text-white mynavbar">
+            <div class="container py-1 text-white">
+                <a class="navbar-brand nav-heading text-white" href="#">Assignment</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon bg-light"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav ms-auto  my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#">Chapter 15-20</a>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex px-4" role="search">
+                        <input class="rounded mx-2" type="seach" placeholder="Search">
+                        <button class="btn btn-outline-success nav-btn" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <br><br>
+    <main class="flex-grow-1 flex-shrink-0  flex-biasis-auto mb-5">
+
+        <div class="py-2 ">
+            <div class="container  ">
+                <div class="row mb-3 mb-md-5">
+                    <div class="column col-12 col-md 6">
+                        <h3 class="text-center">Chapter # 15 - 20 |Arrays :It's Methods | for loops</h3>
+                        <div class="border-bottom mt-4 border secondary"></div>
+                    </div>
+                    <div class="row">
+                        <div class="column col-12 col-md-6 mb-5 mb-md-0">
+                            <h4 class="text-center mt-2">Input</h4>
+                            <div class="border rounded border-dark px-4  d-flex align-items-center h-100">
+                                <div class="input-group mb-3">
+                                    
+                                    <input type="text" class="form-control" onclick="inputText()" placeholder="Type your text here" aria-label="Example text with button addon" aria-describedby="button-addon1" id="inputText">
+                                    <button class="btn btn-outline-dark" type="button" id="button-addon1">Clear</button>
+                                  </div>
+                            </div>
+                        </div>
+                        <!-- aria-label="Recipient's username" aria-describedby="button-addon2"> -->
+                        <div class=" column col-12 col-md-6 mb-3 mb-md-0">
+                            <h4 class="text-center mt-2">Original String</h4>
+                            <div class="border rounded border-dark h-100   "
+                                style="background-color:#ff3030; color: white; ">
+                                <div class="text-center m-3">
+
+                                    1) Faisalabad
+                                    2) Lahore
+                                    3) Karachi
+                                    4) Pishawar
+                                    5) Islamabad
+                                    6) Sheikhupura
+                                    7) Kashmir
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+
+        <div class="py-4 ">
+            <div class="container ">
+                <div class="row mb-3 mb-md-5">
+                    <div class="column col-12 col-md 6  mb-5 mb-md-0 ">
+                        <h4 class="text-center">Buttons</h4>
+                        <div class="border border-dark px-4 rounded  h-100">
+                            <div class="buttons mt-2 text-center">
+
+                                <button style="min-width: 45%; background-color:#ff3030; color: white;"
+                                    id="simplealert" class="btn    m-1 " onclick="simpleAlert()">Simple Alert</button>
+                                <button style="min-width: 45%; color:white; background-color: #ff3030" id="printmyname"
+                                    class="btn  m-1" onclick="printMyName()">Print
+                                    My name</button>
+                                <button style="min-width: 45% ; color:white; background-color: #ff3030"
+                                    id="printallcities" class="btn  m-1" onclick="printAllCities()">Print All Cities</button>
+                                <button style="min-width: 45%;  color:white; background-color:#ff3030" id="addcity"
+                                    class="btn  m-1" onclick="addCity()">
+                                    Add your city in the list</button>
+                                <button style="min-width: 45%;  color:white; background-color:#ff3030"
+                                    id="generatetable" class="btn   m-1" onclick="goGenerate()">Generate table</button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="column col-12 col-md-6 mb-3 mb-md-0">
+                        <h4 class="text-center  ">Output/Result</h4>
+                        <div id="outputresult" onclick="outputresult()" class="container border  rounded border-dark p-4  h-100"
+                            style="border:1px solid black;">
+                        </div>
+                        <div class="text-center">
+                            <button id="clearoutput" class="btn  btn-outline-dark m-3 ">Clear Output</button>
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+                
+    </main>
+
+
+    <footer>
+        <div class="container-fluid bg-black text-white text-center mt-5">
+            <div class="row">
+                <div class="column">
+                    <p class="pt-1">&copy;2022.All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

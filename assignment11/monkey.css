@@ -1,0 +1,25 @@
+
+.wrapper{
+    margin-top: 2px;
+    height: 100px;
+    width: 50px;
+    /* outline:  1px solid red; */
+    position: relative;
+    transform-origin:top ;
+    animation: swing 1000ms ease-in-out infinite alternate-reverse;
+}
+.wrapper img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@keyframes swing{
+    from{
+        transform: rotate(8deg);
+    }
+    to{
+        transform: rotate(-8deg);
+    }
+}

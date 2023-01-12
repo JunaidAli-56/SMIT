@@ -1,0 +1,248 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+:root {
+    --primarycolor: #00ba94;
+    --text-secondary: #a7aeb8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .3s;
+}
+
+.primary-btn {
+    background-color: var(--primarycolor);
+    color: #fff;
+}
+.nav-heading{
+    font-weight: 700;
+}
+.mynavbar .nav-link {
+    padding-left: 15px !important;
+    text-transform: uppercase;
+}
+.nav-btn{
+    padding: 10px 15px;
+    font-size: large;
+}
+/* side-button***************************************************** */
+.side-btn{
+    height: 40px;
+    width: 60px;
+}
+.main {
+    clip-path: polygon(0 0, 100% 0%, 100% 89%, 0% 100%);
+    position: relative;
+    height: 520px;
+    width: 100%;
+}
+
+.main img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.upper-div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    transform: translate(50%, 50%);
+    color: #fff;
+    /*object-fit: cover;
+    top: 0;
+    left: 0;*/
+}
+
+.upper-div h1 p {
+    color: #fff;
+    text-align: center;
+    padding: 5px 0px;
+}
+
+.upper-div p {
+    color: var(--text-secondary);
+}
+
+.upper-div form {
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.upper-div input {
+    width: 70% !important;
+}
+
+/* main2***************************************************** */
+.main2 {
+    height: 170px;
+    width: 100%;
+    color: blue;
+    text-align: center;
+    padding-top: 10mm;
+}
+
+.main2 p {
+    color: #a7aeb8;
+    ;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+
+}
+
+.container2 {
+    background-color: #dce7f77e;
+    clip-path: polygon(0 0, 100% 0%, 100% 89%, 0% 100%);
+    padding-bottom: 20mm;
+}
+
+.services .card-style {
+    width: 300px;
+    margin-top: 20px;
+
+}
+.services .star-icon a{
+    color: #F4A100;
+}
+.card-text {
+    text-align: center;
+    font-weight: 400;
+}
+
+.card-style:hover {
+    margin-top: -20px;
+}
+
+.news {
+    position: relative;
+    top: -100px;
+    padding: 40px 0px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.news input{
+    width:100%
+}
+footer{
+    clip-path: polygon(0 11%, 100% 0%, 100% 100%, 0% 100%);
+    background-color: #212832;
+    padding: 130px 0px 30px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    color: #a7aeb8;
+    
+ }
+footer .card,
+footer .card ul li{
+    background-color: transparent;
+}
+.social-card a{
+    display: inline-block;
+    margin-right: 5px;
+    font-size:x-large;
+    color: #a7aeb8;
+}
+.card-a-styling h6{
+    padding-left: 15px;
+}
+.card-a-styling ul a{
+    text-decoration: none;
+    color: #a7aeb8;
+}
+.card-a-styling ul a:hover{
+    text-decoration: underline;
+}
+footer hr{
+    color: #a7aeb8;
+}
+footer .inner-container{
+    display: flex;
+    justify-content: space-between;
+}
+footer .inner-container h6{
+    font-size: smaller;
+}
+footer .inner-container li{
+    list-style: none;
+}
+footer .inner-container li a{
+    text-decoration: none;
+    color: #a7aeb8;
+}
+footer .inner-container li a:hover{
+    text-decoration: underline;
+}
+.settingbar{
+    position: fixed;
+    top: 0;
+    right: -300px;
+    z-index: 99999;
+    width: 300px;
+    height: 100vh;
+    background-color: red;
+}
+.setting-btn{
+    position: absolute;
+    top: 20%;
+    left: -40px;
+    background: white;
+    padding: 8px;
+    border-radius: 4px 0px 0px 4px;
+}
+#button{
+    margin-right: 5px;
+    display: block;
+    z-index: 100;
+}
+.setting-btn span{
+    /* animation-name: rotates;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    animation-direction: forward;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: linear; */
+    /* background: red; */
+    padding: 15px 8px !important;
+    -webkit-animation: rotates 1s linear infinite;
+    -moz-animation: rotates 1s linear infinite;
+    animation: rotates 1s linear infinite;
+}
+.setting-btn span a{
+    font-size:medium;
+    color: #212832;
+}
+@keyframes rotates{
+    0%{
+        transform: translate(0deg);
+    }100%{
+        transform: rotate(360deg);
+    }
+}
+#button:checked ~ .settingbar{
+    right: 0;
+}
