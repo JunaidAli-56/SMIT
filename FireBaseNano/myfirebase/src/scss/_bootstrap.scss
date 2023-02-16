@@ -1,0 +1,19 @@
+$primary: #04517d;
+@import "~bootstrap/scss/bootstrap.scss";
+
+
+
+.register-con {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .card {
+        width: 320px;
+    }
+}
+
+.contact-con {
+    min-height: 100vh;
+}
